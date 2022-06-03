@@ -1,0 +1,242 @@
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://saefood.netlify.app/img/navBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    padding: 1em 0;
+    .logo {
+        a {
+            img {
+                width: 5vw;
+            }
+        }
+    }
+    .menu {
+        .seccionesNav {    
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            list-style: none;
+            margin-right: 1em;
+            li {
+                a {
+                    color: #FDFFA9;
+                    transition-duration: .5s;
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 20vh;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >* {
+        margin: 1rem 0;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
+.propiedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 2em;
+    margin: 2em 1em;    
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        align-items: center;
+        text-align: center;
+        background-color: #7882a4;
+        border: solid 2px #484e62;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 25px;
+        height: 50vh;
+        width: 25vw;
+        &:hover p {
+            opacity: 1;
+        }
+        > * {
+            margin: 1em 0;
+        }
+        p {
+            margin: 2em;
+            opacity: 0;
+            transition-duration: 250ms;  
+        }
+        img {
+            width: 5vw;
+            margin-bottom: .5em;
+        }
+        h3 {
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+    }
+}
+
+.informacionSeafood {
+    background-color: #383a32;
+    display: flex;
+    .textoInformacion {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: left;
+        padding: 50px;
+        :nth-child(odd) {
+            color: #b2b2b2;
+            font-size: 1rem;
+        }
+        > * {
+        margin: .25em auto;
+        }
+    }
+    .imgInformacion {
+        img {
+            height: 75vh;
+            width: 100%;
+            border-radius: 1em;
+            margin: 1rem;
+            margin-left: 2rem;
+            object-fit: cover;
+        }
+    }
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .separador {
+        margin: 2em auto;
+        width: 75vw;
+    }
+    iframe {
+        margin: 2em auto;
+        width: 85%;
+        height: 75vh;
+    }
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #7b7c76;
+    height: 30vh;
+    padding: 1.5em 0;
+    .intro {
+        grid-area: 1/1/1/2;
+        margin-left: 2em;
+        h4 {
+            font-size: 2rem;
+        }
+    }
+    .btnNews {
+        grid-area: 1/2/1/3;
+        margin: auto;
+        width: 10vw;
+        a {
+            margin: auto;
+        }
+    }
+    .externos {
+        grid-area: 2/1/2/3;
+        margin: 2em auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        cursor: pointer;
+        img {
+            width: 10vw;
+            transition-duration: .5s;
+            &:hover {
+                width: 11vw;
+            }
+        }
+    }
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    margin-top: 5em;
+    background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
+    background-repeat: no-repeat;
+    .seccionesFooter {
+        ul {
+            display: flex;
+            gap: 1em;
+            li {
+                a {
+                    color: #FDFFA9;
+                    transition-duration: .5s;
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+    .btnWhatsapp {
+        a {
+            font-family: sans-serif;
+        }
+    }
+    .redesFooter {
+        ul {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            li{
+                a{
+                    img{
+                        width: 2vw;
+                        transition-duration: .5s;
+                        &:hover {
+                            width: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
