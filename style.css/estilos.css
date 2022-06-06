@@ -395,16 +395,4 @@ main {
 .noticias .externos img:hover {
   width: 11vw;
 }
-
-.btnWhatsapp {
-  background-color: red;
-}
-
-.btnContactUs {
-  background-color: #fa8072;
-}
-
-.btnNews {
-  background-color: lightblue;
-}
 /*# sourceMappingURL=estilos.css.map */

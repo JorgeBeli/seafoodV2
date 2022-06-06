@@ -1,7 +1,7 @@
 $redes:(
-    Whatsapp: red,
+    Whatsapp: #4cd8a2,
     ContactUs: #fa8072,
-    News: lightblue,
+    News: #06fbca,
 );
 @each $red, $color in $redes {
     .btn#{$red}{

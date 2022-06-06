@@ -21,39 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
-.separador {
-  height: 1px;
-  width: 55vw;
-  content: '';
-  border-bottom: 1px solid #383a32;
-}
-
-[class*="btn"] {
-  background-color: #fa8072;
-  padding: .5em;
-  border-radius: 50px;
-  height: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-[class*="btn"] a {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  color: #FDFFA9;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  margin: 1em;
-}
-
-[class*="btn"] a:hover {
-  color: #B3541E;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +68,96 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navBar .menu .seccionesNav li a:hover {
+  color: #B3541E;
+}
+
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  margin-top: 5em;
+  background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
+  background-repeat: no-repeat;
+}
+
+.footerNav .seccionesFooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.footerNav .seccionesFooter ul li a {
+  color: #FDFFA9;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.footerNav .seccionesFooter ul li a:hover {
+  color: #B3541E;
+}
+
+.footerNav .btnWhatsapp a {
+  font-family: sans-serif;
+}
+
+.footerNav .redesFooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerNav .redesFooter ul li a img {
+  width: 2vw;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.footerNav .redesFooter ul li a img:hover {
+  width: 2.5vw;
+}
+
+.separador {
+  height: 1px;
+  width: 55vw;
+  content: '';
+  border-bottom: 1px solid #383a32;
+}
+
+[class*="btn"] {
+  background-color: #fa8072;
+  padding: .5em;
+  border-radius: 50px;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+[class*="btn"] a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #FDFFA9;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  margin: 1em;
+}
+
+[class*="btn"] a:hover {
   color: #B3541E;
 }
 
@@ -233,7 +290,7 @@ main {
 
 .informacionSeafood .imgInformacion img {
   height: 75vh;
-  width: 100%;
+  width: auto;
   border-radius: 1em;
   margin: 1rem;
   margin-left: 2rem;
@@ -286,8 +343,8 @@ main {
 }
 
 .noticias .intro {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1/1/1/2;
   margin-left: 2em;
@@ -298,8 +355,8 @@ main {
 }
 
 .noticias .btnNews {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/1/3;
   margin: auto;
@@ -311,8 +368,8 @@ main {
 }
 
 .noticias .externos {
-  grid-row: 2;
-  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2/1/2/3;
   margin: 2em auto;
@@ -339,59 +396,15 @@ main {
   width: 11vw;
 }
 
-.footerNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 20vh;
-  margin-top: 5em;
-  background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
-  background-repeat: no-repeat;
+.btnWhatsapp {
+  background-color: #4cd8a2;
 }
 
-.footerNav .seccionesFooter ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1em;
+.btnContactUs {
+  background-color: #fa8072;
 }
 
-.footerNav .seccionesFooter ul li a {
-  color: #FDFFA9;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+.btnNews {
+  background-color: #06fbca;
 }
-
-.footerNav .seccionesFooter ul li a:hover {
-  color: #B3541E;
-}
-
-.footerNav .btnWhatsapp a {
-  font-family: sans-serif;
-}
-
-.footerNav .redesFooter ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footerNav .redesFooter ul li a img {
-  width: 2vw;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-}
-
-.footerNav .redesFooter ul li a img:hover {
-  width: 2.5vw;
-}
+/*# sourceMappingURL=estilos.css.map */
