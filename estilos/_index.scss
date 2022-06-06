@@ -27,7 +27,7 @@ main {
     .tarjetas {
         display: flex;
         flex-direction: column;
-        justify-content: first baseline;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
         background-color: #7882a4;
