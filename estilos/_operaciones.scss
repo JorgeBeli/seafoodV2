@@ -1,0 +1,10 @@
+$redes:(
+    Whatsapp: red,
+    ContactUs: #fa8072,
+    News: lightblue,
+);
+@each $red, $color in $redes {
+    .btn#{$red}{
+        background-color: $color;
+    }
+};

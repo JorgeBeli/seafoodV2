@@ -1,43 +1,3 @@
-.navBar {
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(https://saefood.netlify.app/img/navBackground.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: fit-content;
-    padding: 1em 0;
-    .logo {
-        a {
-            img {
-                width: 5vw;
-            }
-        }
-    }
-    .menu {
-        .seccionesNav {    
-            display: flex;
-            align-items: center;
-            gap: 2em;
-            list-style: none;
-            margin-right: 1em;
-            li {
-                a {
-                    color: #FDFFA9;
-                    transition-duration: .5s;
-                    &:hover {
-                        color: $hover;
-                    }
-                }
-            }
-        }
-    }
-}
-
 main {
     margin-top: 20vh;
 }
@@ -188,54 +148,6 @@ main {
             transition-duration: .5s;
             &:hover {
                 width: 11vw;
-            }
-        }
-    }
-}
-
-.footerNav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20vh;
-    margin-top: 5em;
-    background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
-    background-repeat: no-repeat;
-    .seccionesFooter {
-        ul {
-            display: flex;
-            gap: 1em;
-            li {
-                a {
-                    color: #FDFFA9;
-                    transition-duration: .5s;
-                    &:hover {
-                        color: $hover;
-                    }
-                }
-            }
-        }
-    }
-    .btnWhatsapp {
-        a {
-            font-family: sans-serif;
-        }
-    }
-    .redesFooter {
-        ul {
-            display: flex;
-            gap: 1em;
-            align-items: center;
-            li{
-                a{
-                    img{
-                        width: 2vw;
-                        transition-duration: .5s;
-                        &:hover {
-                            width: 2.5vw;
-                        }
-                    }
-                }
             }
         }
     }
