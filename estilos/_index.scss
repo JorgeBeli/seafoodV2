@@ -83,12 +83,7 @@ main {
     }
     .imgInformacion {
         img {
-            height: 75vh;
-            width: auto;
-            border-radius: 1em;
-            margin: 1rem;
-            margin-left: 2rem;
-            object-fit: cover;
+            @include creadores__img;
         }
     }
 }

@@ -1,15 +1,7 @@
 .noticias__wraper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    row-gap: 5em;
+    @include grid;
     .noticias__article {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 25vw;
-        height: 1fr;
-        margin: 0 auto;
+        @include article;
         img {
             width: 100%;
             object-fit: cover;
