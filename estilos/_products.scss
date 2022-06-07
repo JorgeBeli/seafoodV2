@@ -15,10 +15,14 @@
             >:nth-child(3) {
                 font-weight: 900;
                 font-size: 1.85em;
+                color: #fff;
             }
             .ingredientes {
                 list-style: decimal;
                 list-style-position: inside;
+                li {
+                    color: $parrafo;
+                }
             }
         }
     }

@@ -2,6 +2,7 @@
 
 $familia: 'Raleway', sans-serif;
 $hover: #B3541E;
+$parrafo: #e0e0e0;
 
 body {
     background-color: #23251c;
@@ -23,6 +24,10 @@ section {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-size: 1rem;
+}
+
+p {
+    color: $parrafo;
 }
 
 .navBar {
@@ -124,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class*="btn"] {
+    background-color: #fa8072;
     padding: .5em;
     border-radius: 50px;
     height: 2em;
