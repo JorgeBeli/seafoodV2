@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.btnWhatsapp {
+  background-color: #4cd8a2;
+}
+
+.btnContactUs {
+  background-color: #fa8072;
+}
+
+.btnNews {
+  background-color: #06fbca;
+}
+
 body {
   background-color: #23251c;
 }
@@ -167,18 +179,6 @@ p {
 
 [class*="btn"] a:hover {
   color: #B3541E;
-}
-
-.btnWhatsapp {
-  background-color: #4cd8a2;
-}
-
-.btnContactUs {
-  background-color: #fa8072;
-}
-
-.btnNews {
-  background-color: #06fbca;
 }
 
 main {
