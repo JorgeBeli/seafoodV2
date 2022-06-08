@@ -71,3 +71,93 @@ $redes:(
     grid-template-columns: 1fr;
     place-content: center;
 }
+
+@mixin tarjetasResponsive {
+    width: 65%;
+    margin: 0 auto;
+    height: fit-content;
+    img {
+        width: 10vw;
+    }
+    h3 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    p {
+        opacity: 1;
+    }
+}
+
+@mixin introResponsive {
+    @include columna;
+            justify-content: center;
+            h1 {
+                text-align: center;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            h2 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+}
+
+@mixin informacionSeafoodResponsive {
+    @include columna;
+        .textoInformacion {
+            width: 100%;
+            text-align: center;
+            gap: .5em;
+        }
+        .imgInformacion {
+            margin-bottom: 2em;
+            img {
+                display: flex;
+                margin: 0 auto;
+                width: 80%;
+                height: 45%;
+            }
+        }
+}
+
+@mixin noticasResponsive {
+    @include columna;
+        height: fit-content;
+        .intro {
+            margin: 0 1em;
+            text-align: center;
+        }
+        .btnNews {
+            width: fit-content;
+            margin: 1em;
+        }
+        .externos {
+            display: none;
+        }
+}
+
+@mixin blogResponsive {
+    .informacion {
+        @include columna;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0 auto;
+        height: fit-content;
+        img {
+            width: 80%;
+            max-height: 35vh;
+        }
+        .blog__text {
+            gap: 2em;
+            margin: 2em;
+            width: 90%;
+        }
+    }
+    :nth-child(5) {
+        flex-direction: column;
+        .blog__text--right {
+            width: 100%;
+            padding: 3em;
+        }
+    }
+}
