@@ -10,10 +10,10 @@
         background-color: #4e5049;
         border-radius: 40px;
         margin: 0 3em;
-        height: 55vh;
+        height: fit-content;
         img {
             width: 45%;
-            height: 50vh;
+            height: 50%;
             object-fit: cover;
             margin: 1em auto;
             border-radius: 20px;
@@ -48,7 +48,7 @@
             display: grid;
             place-content: center;
             row-gap: 2em;
-            margin: 0 5em;
+            margin: 3em 5em;
             font-weight: 500;
         }
     }

@@ -96,7 +96,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3em 0;
   margin-top: 5em;
   background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
   background-repeat: no-repeat;
@@ -318,8 +321,8 @@ main {
 }
 
 .informacionSeafood .imgInformacion img {
-  height: 75vh;
-  width: auto;
+  height: 35vh;
+  width: 90%;
   border-radius: 1em;
   margin: 1rem;
   margin-left: 2rem;
@@ -453,12 +456,14 @@ main {
   background-color: #4e5049;
   border-radius: 40px;
   margin: 0 3em;
-  height: 55vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .blog .informacion img, .products .informacion img, .blog .informacion--left img, .products .informacion--left img, .products .products__article--right img, .products .products__article img {
   width: 45%;
-  height: 50vh;
+  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 1em auto;
@@ -502,7 +507,7 @@ main {
   display: grid;
   place-content: center;
   row-gap: 2em;
-  margin: 0 5em;
+  margin: 3em 5em;
   font-weight: 500;
 }
 
@@ -640,14 +645,21 @@ main {
   width: 35vw;
 }
 
+.creadores__wraper .creadores__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .creadores__wraper .creadores__img img {
-  height: 75vh;
-  width: auto;
   border-radius: 1em;
   margin: 1rem;
-  margin-left: 2rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 75%;
+  height: auto;
 }
 
 .creadores__articles {
@@ -683,7 +695,7 @@ main {
 
 .creadores__articles .creadores__article > img {
   width: 15vw;
-  height: 35vh;
+  height: 35%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 7px;
@@ -1521,8 +1533,8 @@ main {
   }
   .creadores__wraper .creadores__img img {
     margin: 0 auto;
-    height: 35vh;
-    width: 90%;
+    height: 30vh;
+    width: 70%;
   }
   .creadores__articles {
     display: -ms-grid;

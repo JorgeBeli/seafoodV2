@@ -16,8 +16,14 @@
         }
     }
     .creadores__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         img {
-            @include creadores__img;
+            border-radius: 1em;
+            margin: 1rem;
+            width: 75%;
+            height: auto;
         }
     }
 }
@@ -31,7 +37,7 @@
         border: solid 2px #484e62;
         > img {
             width: 15vw;
-            height: 35vh;
+            height: 35%;
             object-fit: cover;
             border-radius: 7px;
             margin-top: 1em;
