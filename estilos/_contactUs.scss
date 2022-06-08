@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-    margin: 2rem;
+    margin: 2rem auto;
     border-radius: 30px;
+    width: 95%;
     .form {
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;

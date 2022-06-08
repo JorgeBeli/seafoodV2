@@ -720,8 +720,9 @@ main {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
           box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: 30px;
+  width: 95%;
 }
 
 .form__wraper .form {
