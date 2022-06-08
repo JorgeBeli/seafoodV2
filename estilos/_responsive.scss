@@ -48,6 +48,7 @@
     main {
         .intro {
             @include introResponsive;
+            margin-top: -10em;
         }
         .propiedades {
             @include gridResponsive;
@@ -156,6 +157,39 @@
             }
         }
     }
+    .form__wraper {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin: 2em auto;
+        .form {
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 0;
+            .form__inputs {
+                form {
+                    .form__input {
+                        margin-left: 0;
+                        width: 75%; 
+                    }
+                }
+            }
+        }
+        .form__info {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 30px;
+            h3 {
+                margin-bottom: 0;
+            }
+            ul {
+                li {
+                    margin-top: 0;
+                }
+            }
+            p {
+                margin-bottom: 1.5em;
+            }
+        }
+    }
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
     .navBar {
@@ -207,6 +241,7 @@
     main {
         .intro {
             @include introResponsive;
+            margin-top: -5em;
             h1 {
                 font-size: 3rem;
             }
@@ -237,21 +272,15 @@
     .products {
         display: grid;
         .products__article {
-            display: flex;
-            flex-direction: row;
+            @include columna;
             img {
-                width: auto;
-                margin: auto;
-                padding: 1em;
-                border-radius: 30px;
+                height: 25vh;
+                width: 60%;
             }
             .products__text {
-                width: 75%;
+                width: 90%;
                 margin: 1em;
             }
-        }
-        .products__article--right {
-            flex-direction: row-reverse;
         }
     }
     .noticias__wraper {
@@ -303,6 +332,39 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .form__wraper {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin: 2em auto;
+        .form {
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 0;
+            .form__inputs {
+                form {
+                    .form__input {
+                        margin-left: 0;
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+        .form__info {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 30px;
+            h3 {
+                margin-bottom: 0;
+            }
+            ul {
+                li {
+                    margin-top: 0;
+                }
+            }
+            p {
+                margin-bottom: 1.5em;
             }
         }
     }
