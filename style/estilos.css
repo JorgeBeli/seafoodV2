@@ -5,6 +5,7 @@ body {
 
 section {
   margin-top: 5em;
+  width: 100%;
 }
 
 * {
@@ -49,6 +50,10 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   padding: 1em 0;
+}
+
+.navBar #toggler, .navBar label {
+  display: none;
 }
 
 .navBar .logo a img {
@@ -318,6 +323,7 @@ main {
   margin-left: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .video {
@@ -328,12 +334,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .video h4 {
@@ -868,5 +874,220 @@ main {
 
 .form__wraper .form__info p a:hover {
   color: #B3541E;
+}
+
+@media screen and (max-width: 767px) {
+  .navBar {
+    background-position: 100%;
+  }
+  .navBar .logo a img {
+    width: 10vw;
+  }
+  .navBar .menu {
+    width: 100%;
+    max-height: 0;
+    display: none;
+  }
+  .navBar .menu .seccionesNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    display: flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .menu .seccionesNav li {
+    width: 100%;
+    text-align: center;
+    font-size: .85rem;
+  }
+  .navBar .menu .seccionesNav .btnContactUs {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-right: 1em;
+  }
+  .navBar #toggler {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    opacity: 0;
+  }
+  .navBar #toggler:checked ~ .menu {
+    max-height: 100%;
+    display: block;
+  }
+  main .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .intro h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  main .intro h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  main .propiedades {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-content: center;
+  }
+  main .propiedades .tarjetas {
+    width: 65%;
+    margin: 0 auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .propiedades .tarjetas img {
+    width: 10vw;
+  }
+  main .propiedades .tarjetas h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  main .propiedades .tarjetas p {
+    opacity: 1;
+  }
+  .informacionSeafood {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .informacionSeafood .textoInformacion {
+    width: 100%;
+    text-align: center;
+    gap: .5em;
+  }
+  .informacionSeafood .imgInformacion {
+    margin-bottom: 2em;
+  }
+  .informacionSeafood .imgInformacion img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 45%;
+  }
+  .video {
+    display: none;
+  }
+  .noticias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .noticias .intro {
+    margin: 0 1em;
+    text-align: center;
+  }
+  .noticias .btnNews {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .noticias .externos {
+    display: none;
+  }
+  .footerNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 1em;
+  }
+  .footerNav .seccionesFooter {
+    margin-top: 2em;
+  }
+  .footerNav .seccionesFooter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .footerNav .redesFooter {
+    margin: 1.5em;
+  }
+  .footerNav .redesFooter ul li {
+    text-align: center;
+  }
+  .footerNav .redesFooter ul li a img {
+    width: 8vw;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

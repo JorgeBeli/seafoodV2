@@ -1,0 +1,140 @@
+@media screen and (max-width: 767px) {
+    .navBar {
+        background-position: 100%;
+        .logo {
+            a {
+                img {
+                    width: 10vw;
+                }
+            }
+        }
+        .menu {
+            width: 100%;
+            max-height: 0;
+            display: none;
+            .seccionesNav{
+                @include columna;
+                margin: 0 auto;
+                display: flexbox;
+                justify-content: center;
+                li {
+                    width: 100%;
+                    text-align: center;
+                    font-size: .85rem;
+                }
+                .btnContactUs {
+                    width: fit-content;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        label {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 1em;
+        }
+        #toggler {
+            display: inline-flex;
+            opacity: 0;
+            &:checked ~ .menu {
+                max-height: 100%;
+                display: block;
+            }
+        }
+    }
+    main {
+        .intro {
+            @include columna;
+            justify-content: center;
+            h1 {
+                text-align: center;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            h2 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+        .propiedades {
+            @include gridResponsive;
+            .tarjetas {
+                width: 65%;
+                margin: 0 auto;
+                height: fit-content;
+                img {
+                    width: 10vw;
+                }
+                h3 {
+                    width: 100%;
+                    font-size: 2rem;
+                }
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .informacionSeafood {
+        @include columna;
+        .textoInformacion {
+            width: 100%;
+            text-align: center;
+            gap: .5em;
+        }
+        .imgInformacion {
+            margin-bottom: 2em;
+            img {
+                display: flex;
+                margin: 0 auto;
+                width: 80%;
+                height: 45%;
+            }
+        }
+    }
+    .video {
+        display: none;
+    }
+    .noticias {
+        @include columna;
+        height: fit-content;
+        .intro {
+            margin: 0 1em;
+            text-align: center;
+        }
+        .btnNews {
+            width: fit-content;
+        }
+        .externos {
+            display: none;
+        }
+    }
+    .footerNav {
+        @include columna;
+        height: fit-content;
+        gap: 1em;
+        .seccionesFooter {
+            margin-top: 2em;
+            ul {
+                @include columna;
+                margin-bottom: 1.5em;
+            }
+        }
+        .redesFooter {
+            margin: 1.5em;
+            ul {
+                li {
+                    text-align: center;
+                    a {
+                        img {
+                            width: 8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
