@@ -104,6 +104,58 @@
             }
         }
     }
+    .noticias__wraper {
+        display: grid;
+        grid-template-columns: 1fr;
+        .noticias__article {
+            width: 70%;
+        }
+    }
+    .creadores__wraper {
+        flex-direction: column;
+        .creadores__text {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            h2 {
+                margin-top: .5em;
+            }
+            p {
+                width: 100%;
+                padding: 2em;
+            }
+        }
+        .creadores__img {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+            img {
+                margin: 0 auto;
+                height: 35vh;
+                width: 90%;
+            }
+        }
+    }
+    .creadores__articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        .creadores__article {
+            width: 80vw;
+            > img {
+                width: 50%;
+                height: 20vh;
+            }
+            .creadores__informacion {
+                .creadores__linkedin {
+                    a {
+                        img {
+                            width: 7vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
     .navBar {
@@ -200,6 +252,58 @@
         }
         .products__article--right {
             flex-direction: row-reverse;
+        }
+    }
+    .noticias__wraper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .noticias__article {
+            width: 80%;
+        }
+    }
+    .creadores__wraper {
+        flex-direction: column;
+        .creadores__text {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            h2 {
+                margin-top: .5em;
+            }
+            p {
+                width: 100%;
+                padding: 2em;
+            }
+        }
+        .creadores__img {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+            img {
+                margin: 0 auto;
+                height: 35vh;
+                width: 90%;
+            }
+        }
+    }
+    .creadores__articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .creadores__article {
+            width: 40vw;
+            > img {
+                width: 50%;
+                height: 20vh;
+            }
+            .creadores__informacion {
+                .creadores__linkedin {
+                    a {
+                        img {
+                            width: 5vw;
+                        }
+                    }
+                }
+            }
         }
     }
 }
