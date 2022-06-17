@@ -61,7 +61,7 @@ p {
             align-items: center;
             gap: 2em;
             list-style: none;
-            margin-right: 1em;
+            margin: 0 1em;
             li {
                 a {
                     color: #FDFFA9;
@@ -70,9 +70,6 @@ p {
                         color: $hover;
                     }
                 }
-            }
-            .btnContactUs {
-                margin-right: 1em;
             }
         }
     }
