@@ -1,5 +1,8 @@
 .noticias__wraper {
-    @include grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 1.5em auto;  
     .noticias__article {
         @include article;
         img {

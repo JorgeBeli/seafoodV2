@@ -90,16 +90,16 @@ $redes:(
 
 @mixin introResponsive {
     @include columna;
-            justify-content: center;
-            h1 {
-                text-align: center;
-                width: 100%;
-                font-size: 2.5rem;
-            }
-            h2 {
-                text-align: center;
-                font-size: 1.5rem;
-            }
+    justify-content: center;
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
 
 @mixin informacionSeafoodResponsive {
@@ -122,18 +122,18 @@ $redes:(
 
 @mixin noticasResponsive {
     @include columna;
-        height: fit-content;
-        .intro {
-            margin: 0 1em;
-            text-align: center;
-        }
-        .btnNews {
-            width: fit-content;
-            margin: 1em;
-        }
-        .externos {
-            display: none;
-        }
+    height: fit-content;
+    .intro {
+        margin: 0 1em;
+        text-align: center;
+    }
+    .btnNews {
+        width: fit-content;
+        margin: 1em;
+    }
+    .externos {
+        display: none;
+    }
 }
 
 @mixin blogResponsive {

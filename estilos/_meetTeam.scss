@@ -28,7 +28,10 @@
     }
 }
 .creadores__articles {
-    @include grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 1.5em auto;  
     .creadores__article {
         @include article;
         height: 100%;
