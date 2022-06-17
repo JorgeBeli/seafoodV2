@@ -103,6 +103,7 @@ p {
   margin-top: 5em;
   background-image: url(https://saefood.netlify.app/img/footerBackground.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footerNav .seccionesFooter ul {
@@ -1274,7 +1275,7 @@ main {
     background-position: 100%;
   }
   .navBar .logo a img {
-    width: 10vw;
+    width: 6vw;
   }
   .navBar .menu {
     width: 100%;
@@ -1282,21 +1283,18 @@ main {
     display: none;
   }
   .navBar .menu .seccionesNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: flexbox;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    display: flexbox;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .navBar .menu .seccionesNav li {
     width: 100%;
@@ -1335,7 +1333,7 @@ main {
     max-height: 100%;
     display: block;
   }
-  main .intro {
+  .intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1343,52 +1341,47 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: -5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  main .intro h1 {
+  .intro h1 {
     text-align: center;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  main .intro h2 {
+  .intro h2 {
     text-align: center;
     font-size: 1.5rem;
   }
-  main .intro h1 {
-    font-size: 3rem;
-  }
-  main .propiedades {
+  .propiedades {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-content: center;
   }
-  main .propiedades .tarjetas {
+  .propiedades .tarjetas {
     width: 65%;
     margin: 0 auto;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    height: 100%;
   }
-  main .propiedades .tarjetas img {
-    width: 10vw;
+  .propiedades .tarjetas img {
+    width: 7vw;
   }
-  main .propiedades .tarjetas h3 {
+  .propiedades .tarjetas h3 {
     width: 100%;
     font-size: 2rem;
   }
-  main .propiedades .tarjetas p {
+  .propiedades .tarjetas p {
     opacity: 1;
   }
-  main .propiedades .tarjetas img {
-    width: 7vw;
-  }
-  main .informacionSeafood {
+  .informacionSeafood {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1400,15 +1393,12 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .informacionSeafood .textoInformacion {
+  .informacionSeafood .textoInformacion {
     width: 100%;
     text-align: center;
     gap: .5em;
   }
-  main .informacionSeafood .imgInformacion {
-    margin-bottom: 2em;
-  }
-  main .informacionSeafood .imgInformacion img {
+  .informacionSeafood .imgInformacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1416,10 +1406,10 @@ main {
     width: 80%;
     height: 45%;
   }
-  main .video {
+  .video {
     display: none;
   }
-  main .noticias {
+  .noticias {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1434,17 +1424,17 @@ main {
     height: -moz-fit-content;
     height: fit-content;
   }
-  main .noticias .intro {
+  .noticias .intro {
     margin: 0 1em;
     text-align: center;
   }
-  main .noticias .btnNews {
+  .noticias .btnNews {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: 1em;
   }
-  main .noticias .externos {
+  .noticias .externos {
     display: none;
   }
   .blog .informacion, .products .informacion, .blog .informacion--left, .products .informacion--left, .products .products__article--right, .products .products__article {
@@ -1452,14 +1442,12 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
     width: 90%;
     margin: 0 auto;
     height: -webkit-fit-content;
@@ -1468,26 +1456,29 @@ main {
   }
   .blog .informacion img, .products .informacion img, .blog .informacion--left img, .products .informacion--left img, .products .products__article--right img, .products .products__article img {
     width: 80%;
-    height: 25vh;
+    height: 45vh;
   }
   .blog .informacion .blog__text, .products .informacion .blog__text, .blog .informacion--left .blog__text, .products .informacion--left .blog__text, .products .products__article--right .blog__text, .products .products__article .blog__text {
     gap: 2em;
     margin: 2em;
     width: 90%;
   }
-  .blog :nth-child(5), .products :nth-child(5) {
+  .blog .informacion:nth-child(5), .products .informacion:nth-child(5), .blog .informacion--left:nth-child(5), .products .informacion--left:nth-child(5), .products .products__article--right:nth-child(5), .products .products__article:nth-child(5) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blog :nth-child(5) .blog__text--right, .products :nth-child(5) .blog__text--right {
+  .blog .informacion:nth-child(5) .blog__text--right, .products .informacion:nth-child(5) .blog__text--right, .blog .informacion--left:nth-child(5) .blog__text--right, .products .informacion--left:nth-child(5) .blog__text--right, .products .products__article--right:nth-child(5) .blog__text--right, .products .products__article:nth-child(5) .blog__text--right {
     width: 100%;
     padding: 3em;
   }
   .products {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-content: center;
   }
   .products .products__article, .products .products__article--right {
     display: -webkit-box;
@@ -1502,8 +1493,8 @@ main {
             align-items: center;
   }
   .products .products__article img, .products .products__article--right img {
-    height: 25vh;
-    width: 60%;
+    height: 45vh;
+    width: 90%;
   }
   .products .products__article .products__text, .products .products__article--right .products__text {
     width: 90%;
@@ -1514,6 +1505,7 @@ main {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    place-content: center;
   }
   .noticias__wraper .noticias__article {
     width: 80%;
@@ -1547,7 +1539,7 @@ main {
   }
   .creadores__wraper .creadores__img img {
     margin: 0 auto;
-    height: 30vh;
+    height: 50vh;
     width: 70%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1557,6 +1549,7 @@ main {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    place-content: center;
   }
   .creadores__articles .creadores__article {
     width: 40vw;
